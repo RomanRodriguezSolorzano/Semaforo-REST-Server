@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WebSocket semáforo</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body class="container-fluid">
+  <div class="row m-5">
+    <div class="col-3">
+      <div id="semaforo" class="text-white">
+        <div id="verde" class="luz"></div>
+        <div id="amarillo" class="luz"></div>
+        <div id="rojo" class="luz"></div>
+      </div>
+    </div>
+
+    <div class="col-9">
+      <h1 class="text-center">Estadisticas</h1>
+      <div class="row my-5">
+        <h3>Vehiculos por minuto</h3>
+        <table class="table">
+          <caption class="d-none">
+            Vehiculos por minuto            
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Color de semaforo</th>
+              <th scope="col">Cantidad de Carros</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Rango minutos</th>
+            </tr>
+          </thead>
+          <tbody id="minuto">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row my-5">
+        <h3>Vehiculos por hora</h3>
+        <table class="table">
+          <caption class="d-none">
+            Vehiculos por hora            
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Color de semaforo</th>
+              <th scope="col">Cantidad de Carros</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Rango Horas</th>
+            </tr>
+          </thead>
+          <tbody id="hora">            
+          </tbody>
+        </table>
+      </div>
+      <div class="row my-5">
+        <h3>Vehiculos por dia</h3>
+        <table class="table">
+          <caption class="d-none">
+            Vehiculos por dia            
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Color de semaforo</th>
+              <th scope="col">Cantidad de Carros</th>
+              <th scope="col">Rango dias</th>
+            </tr>
+          </thead>
+          <tbody id="dia">
+            
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
